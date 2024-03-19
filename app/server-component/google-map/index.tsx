@@ -1,9 +1,10 @@
 import { GoogleMapsEmbed } from '@next/third-parties/google'
+import { GOOGLE_MAP_API_KEY } from './const'
 
 export default function GoogleMap() {
   return (
     <GoogleMapsEmbed
-      apiKey="XYZ"
+      apiKey={GOOGLE_MAP_API_KEY}
       height={200}
       width="100%"
       mode="place"
