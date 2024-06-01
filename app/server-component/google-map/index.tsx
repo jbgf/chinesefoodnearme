@@ -5,7 +5,7 @@ export default function GoogleMap() {
   return (
     <GoogleMapsEmbed
       apiKey={GOOGLE_MAP_API_KEY}
-      height={200}
+      height={400}
       width="100%"
       mode="place"
       q="Brooklyn+Bridge,New+York,NY"
