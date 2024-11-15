@@ -20,14 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const isDev = process.env.NODE_ENV === "development"
-  const Wrapper = isDev ? Inspector : React.Fragment;
   return (
     <html lang="en" data-theme="cupcake">
-      <Wrapper>
 
-        <body className={inter.className}>{children}</body>
-        <DevTKD />
-      </Wrapper>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

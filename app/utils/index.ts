@@ -2,7 +2,7 @@ export const generateTitle = (food?: string) => {
  /*  if (country) {
     return `Random Phone Number Generator for Privacy · ${country}`
   } */
-  return `Top Chinese Food Near Me: Find the Best Recommendations on the Map`
+  return `Chinese Food Near Me: The Best Recommendations on the Map`
 }
 
 export const generateDescription = (food?: string) => {
