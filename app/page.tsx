@@ -35,12 +35,12 @@ export default function Home() {
                   <button className="btn btn-xs btn-outline">Noodles</button>
                 </div>
                 <div className="flex gap-1 mt-2">
-                  <select className="select select-bordered select-xs flex-1">
+                  {/* <select className="select select-bordered select-xs flex-1">
                     <option>Price Range</option>
                     <option>$</option>
                     <option>$$</option>
                     <option>$$$</option>
-                  </select>
+                  </select> */}
                   <select className="select select-bordered select-xs flex-1">
                     <option>Rating</option>
                     <option>4.5+</option>
@@ -72,12 +72,12 @@ export default function Home() {
                   <button className="btn btn-sm btn-outline flex-1">Noodles</button>
                 </div>
                 <div className="flex gap-2">
-                  <select className="select select-bordered select-sm flex-1">
+                  {/* <select className="select select-bordered select-sm flex-1">
                     <option>Price Range</option>
                     <option>$</option>
                     <option>$$</option>
                     <option>$$$</option>
-                  </select>
+                  </select> */}
                   <select className="select select-bordered select-sm flex-1">
                     <option>Rating</option>
                     <option>4.5+</option>
