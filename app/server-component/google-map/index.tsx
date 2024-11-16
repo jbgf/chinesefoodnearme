@@ -46,6 +46,18 @@ export default function GoogleMap() {
                 });
                 mapInstanceRef.current = map;
 
+                // 添加地图点击事件
+                map.addListener('click', (e: google.maps.MapMouseEvent) => {
+                  if (e.latLng) {
+                    const newLocation = {
+                      lat: e.latLng.lat(),
+                      lng: e.latLng.lng()
+                    };
+                    setUserLocation(newLocation);
+                    searchNearbyRestaurants(map, newLocation);
+                  }
+                });
+
                 // 添加用户位置标记
                 new google.maps.Marker({
                   position: location,
