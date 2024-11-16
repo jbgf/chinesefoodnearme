@@ -1,3 +1,8 @@
+a website where u can find chinese food nearby
+
+## site
+https://www.chinesefoodnearme.info
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
