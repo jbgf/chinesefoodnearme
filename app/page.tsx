@@ -25,78 +25,144 @@ export default function Home() {
             <FilterPanel />
           </div>
         </section>
-        <section className="bg-base-100 flex-1">
-          <div className="container mx-auto px-4 py-8 md:py-12">
-            <h2 className="text-xl md:text-3xl font-bold text-center mb-6 md:mb-8">
-              Why Choose Our Service
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-              <div className="card bg-base-200 hover:shadow-lg transition-all">
-                <div className="card-body p-4 md:p-6">
-                  <h3 className="text-lg md:text-xl font-medium flex items-center gap-2">
-                    <span className="text-2xl md:text-3xl">🍜</span>
-                    <span>Real-time Updates</span>
-                  </h3>
-                  <p className="text-sm md:text-base text-base-content/70">
-                    Get live information about restaurant availability
-                  </p>
+        <main>
+          {/* Add a Quick Start Guide section */}
+          <section className="bg-base-100 py-8" aria-label="Quick Start Guide">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+                How to Find Your Perfect Chinese Restaurant
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="card bg-base-200">
+                  <div className="card-body">
+                    <span className="text-4xl mb-2">1️⃣</span>
+                    <h3 className="text-lg font-semibold">Enable Location</h3>
+                    <p>Allow location access for the most accurate restaurant recommendations near you.</p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="card bg-base-200 hover:shadow-lg transition-all">
-                <div className="card-body p-4 md:p-6">
-                  <h3 className="text-lg md:text-xl font-medium flex items-center gap-2">
-                    <span className="text-2xl md:text-3xl">🌟</span>
-                    <span>Verified Reviews</span>
-                  </h3>
-                  <p className="text-sm md:text-base text-base-content/70">
-                    Read authentic reviews from food lovers
-                  </p>
+                <div className="card bg-base-200">
+                  <div className="card-body">
+                    <span className="text-4xl mb-2">2️⃣</span>
+                    <h3 className="text-lg font-semibold">Choose Cuisine</h3>
+                    <p>Select your preferred Chinese cuisine style from our diverse options.</p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="card bg-base-200 hover:shadow-lg transition-all">
-                <div className="card-body p-4 md:p-6">
-                  <h3 className="text-lg md:text-xl font-medium flex items-center gap-2">
-                    <span className="text-2xl md:text-3xl">📍</span>
-                    <span>Smart Recommendations</span>
-                  </h3>
-                  <p className="text-sm md:text-base text-base-content/70">
-                    Get personalized dining suggestions
-                  </p>
+                <div className="card bg-base-200">
+                  <div className="card-body">
+                    <span className="text-4xl mb-2">3️⃣</span>
+                    <h3 className="text-lg font-semibold">Set Filters</h3>
+                    <p>Refine your search by rating, distance, and current availability.</p>
+                  </div>
+                </div>
+                <div className="card bg-base-200">
+                  <div className="card-body">
+                    <span className="text-4xl mb-2">4️⃣</span>
+                    <h3 className="text-lg font-semibold">Explore Details</h3>
+                    <p>Click markers to view menus, photos, reviews, and contact information.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="bg-base-200 py-8 md:py-12">
-          <div className="container mx-auto px-4">
-            <h2 className="text-xl md:text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
-            <div className="max-w-3xl mx-auto space-y-4">
-              <details className="collapse bg-base-100">
-                <summary className="collapse-title text-lg font-medium">How do I search for restaurants?</summary>
-                <div className="collapse-content">
-                  <p>Simply click anywhere on the map to search for Chinese restaurants in that area. Use our filters to refine your search by cuisine type and ratings.</p>
-                </div>
-              </details>
-              <details className="collapse bg-base-100">
-                <summary className="collapse-title text-lg font-medium">What types of Chinese cuisine are available?</summary>
-                <div className="collapse-content">
-                  <p>We feature a wide variety of Chinese cuisines including Sichuan, Cantonese, Hot Pot, Dim Sum, and more. Use our filters to find your preferred style.</p>
-                </div>
-              </details>
+          {/* Add Popular Cuisines Section */}
+          <section className="bg-base-200 py-12" aria-label="Popular Chinese Cuisines">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+                Popular Chinese Cuisines
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article className="card bg-base-100">
+                  <div className="card-body">
+                    <h3 className="card-title">Sichuan Cuisine 川菜</h3>
+                    <p>Known for its bold flavors, spiciness, and numbing peppercorns. Famous dishes include Mapo Tofu and Kung Pao Chicken.</p>
+                  </div>
+                </article>
+                <article className="card bg-base-100">
+                  <div className="card-body">
+                    <h3 className="card-title">Cantonese Cuisine 粤菜</h3>
+                    <p>Features fresh ingredients and light seasoning. Famous for dim sum, BBQ pork, and seafood dishes.</p>
+                  </div>
+                </article>
+                <article className="card bg-base-100">
+                  <div className="card-body">
+                    <h3 className="card-title">Hot Pot 火锅</h3>
+                    <p>Interactive dining experience with simmering pot of broth. Choose from variety of meats, vegetables, and noodles.</p>
+                  </div>
+                </article>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <footer className="bg-base-300 py-6">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-sm text-base-content/70">
-              © {new Date().getFullYear()} Chinese Food Near Me. Your guide to authentic Chinese cuisine.
-            </p>
-          </div>
-        </footer>
+          {/* Expand FAQ Section */}
+          <section className="bg-base-100 py-12">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+              <div className="max-w-3xl mx-auto space-y-4">
+                <details className="collapse bg-base-200">
+                  <summary className="collapse-title text-lg font-medium">What payment methods are typically accepted?</summary>
+                  <div className="collapse-content">
+                    <p>Most restaurants accept major credit cards, debit cards, and cash. Some locations also accept digital payments like Apple Pay and Google Pay.</p>
+                  </div>
+                </details>
+                <details className="collapse bg-base-200">
+                  <summary className="collapse-title text-lg font-medium">Do restaurants offer delivery services?</summary>
+                  <div className="collapse-content">
+                    <p>Many restaurants partner with delivery services like DoorDash, Uber Eats, and Grubhub. Check individual restaurant listings for delivery options.</p>
+                  </div>
+                </details>
+                <details className="collapse bg-base-200">
+                  <summary className="collapse-title text-lg font-medium">How accurate are the wait times?</summary>
+                  <div className="collapse-content">
+                    <p>Wait times are updated in real-time based on current restaurant conditions and user reports. During peak hours, actual wait times may vary.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+
+          {/* Add Tips Section */}
+          <section className="bg-base-200 py-12">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Tips for Your Chinese Dining Experience</h2>
+              <div className="prose max-w-3xl mx-auto">
+                <ul className="space-y-4">
+                  <li><strong>Family Style Dining:</strong> Chinese meals are traditionally served family-style. Consider ordering dishes to share with your group.</li>
+                  <li><strong>Rice and Noodles:</strong> These are typically ordered separately from main dishes.</li>
+                  <li><strong>Tea Etiquette:</strong> Many restaurants serve complimentary tea. Tap two fingers on the table to thank someone for pouring tea.</li>
+                  <li><strong>Dietary Restrictions:</strong> Inform your server about any allergies or dietary restrictions, as many dishes may contain peanuts, shellfish, or other common allergens.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Enhanced Footer */}
+          <footer className="bg-base-300 py-8">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                  <h3 className="font-semibold mb-4">About Us</h3>
+                  <p className="text-sm text-base-content/70">Helping you discover authentic Chinese cuisine in your neighborhood since {new Date().getFullYear()}.</p>
+                </div>
+                {/* <div>
+                  <h3 className="font-semibold mb-4">Quick Links</h3>
+                  <ul className="text-sm space-y-2">
+                    <li><a href="#" className="hover:underline">Restaurant Guide</a></li>
+                    <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" className="hover:underline">Terms of Service</a></li>
+                  </ul>
+                </div> */}
+                <div>
+                  <h3 className="font-semibold mb-4">Contact</h3>
+                  <p className="text-sm text-base-content/70">Questions or feedback? Email us at support@chinesefoodmap.com</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-base-content/70 pt-8 border-t border-base-content/10">
+                © {new Date().getFullYear()} Chinese Food Near Me. All rights reserved.
+              </div>
+            </div>
+          </footer>
+        </main>
       </div>
     </FilterProvider>
   );
