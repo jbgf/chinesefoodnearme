@@ -69,6 +69,34 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="bg-base-200 py-8 md:py-12">
+          <div className="container mx-auto px-4">
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              <details className="collapse bg-base-100">
+                <summary className="collapse-title text-lg font-medium">How do I search for restaurants?</summary>
+                <div className="collapse-content">
+                  <p>Simply click anywhere on the map to search for Chinese restaurants in that area. Use our filters to refine your search by cuisine type and ratings.</p>
+                </div>
+              </details>
+              <details className="collapse bg-base-100">
+                <summary className="collapse-title text-lg font-medium">What types of Chinese cuisine are available?</summary>
+                <div className="collapse-content">
+                  <p>We feature a wide variety of Chinese cuisines including Sichuan, Cantonese, Hot Pot, Dim Sum, and more. Use our filters to find your preferred style.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <footer className="bg-base-300 py-6">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm text-base-content/70">
+              © {new Date().getFullYear()} Chinese Food Near Me. Your guide to authentic Chinese cuisine.
+            </p>
+          </div>
+        </footer>
       </div>
     </FilterProvider>
   );
