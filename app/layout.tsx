@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: generateTitle(),
   description: generateDescription(),
+  alternates: {
+    canonical: 'https://www.chinesefoodnearme.info', // 请替换为您的实际域名
+  },
 };
 
 export default function RootLayout({
